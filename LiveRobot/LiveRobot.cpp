@@ -4,8 +4,8 @@
 #include "stdafx.h"
 #include <iostream>
 
-#include "Robot.h"
-#include "Douyu/DouyuRobot.h"
+#include "../Robot/Robot.h"
+#include "../Robot/DouyuRobot.h"
 
 
 bool g_exit = false;

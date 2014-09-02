@@ -309,7 +309,9 @@ Windows 95
 #include "Semaphore.h"
 #include "CriticalSection.h"
 #include "STLHelper.h"
+#ifndef __ATLAPP_H__
 #include "Win32Helper.h"
+#endif // !__ATLAPP_H__
 #include "PrivateHeap.h"
 #include "bufferptr.h"
 

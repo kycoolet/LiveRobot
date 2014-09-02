@@ -175,15 +175,10 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Douyu\DouyuRobot.h" />
-    <ClInclude Include="Douyu\MessageEncode.h" />
-    <ClInclude Include="Robot.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Douyu\DouyuRobot.cpp" />
-    <ClCompile Include="Douyu\MessageEncode.cpp" />
     <ClCompile Include="LiveRobot.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -193,11 +188,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\Common.vcxproj">
-      <Project>{c3f888eb-03d5-433b-aa00-4d6c3d7f2ec3}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\HPSocket\HPSocket.vcxproj">
-      <Project>{7f18b2e5-7bfa-4fc7-82bf-7e69570480c9}</Project>
+    <ProjectReference Include="..\Robot\Robot.vcxproj">
+      <Project>{cd9fc986-596d-420e-8c9b-d0b5b9c82942}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

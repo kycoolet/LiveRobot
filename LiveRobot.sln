@@ -12,6 +12,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HPSocket", "HPSocket\HPSocket.vcxproj", "{7F18B2E5-7BFA-4FC7-82BF-7E69570480C9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LiveRobotUI", "LiveRobotUI\LiveRobotUI.vcxproj", "{BBE6B2D6-C17C-4EC6-856A-D6939A8D374B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Robot", "Robot\Robot.vcxproj", "{CD9FC986-596D-420E-8C9B-D0B5B9C82942}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -30,6 +34,14 @@ Global
 		{7F18B2E5-7BFA-4FC7-82BF-7E69570480C9}.Debug|Win32.Build.0 = Debug|Win32
 		{7F18B2E5-7BFA-4FC7-82BF-7E69570480C9}.Release|Win32.ActiveCfg = Release|Win32
 		{7F18B2E5-7BFA-4FC7-82BF-7E69570480C9}.Release|Win32.Build.0 = Release|Win32
+		{BBE6B2D6-C17C-4EC6-856A-D6939A8D374B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BBE6B2D6-C17C-4EC6-856A-D6939A8D374B}.Debug|Win32.Build.0 = Debug|Win32
+		{BBE6B2D6-C17C-4EC6-856A-D6939A8D374B}.Release|Win32.ActiveCfg = Release|Win32
+		{BBE6B2D6-C17C-4EC6-856A-D6939A8D374B}.Release|Win32.Build.0 = Release|Win32
+		{CD9FC986-596D-420E-8C9B-D0B5B9C82942}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CD9FC986-596D-420E-8C9B-D0B5B9C82942}.Debug|Win32.Build.0 = Debug|Win32
+		{CD9FC986-596D-420E-8C9B-D0B5B9C82942}.Release|Win32.ActiveCfg = Release|Win32
+		{CD9FC986-596D-420E-8C9B-D0B5B9C82942}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

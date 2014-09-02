@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Douyu">
+      <UniqueIdentifier>{b66f66b2-181a-453b-ae26-c1321fb78c8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,13 +27,25 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Robot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageEncode.h">
+      <Filter>Douyu</Filter>
+    </ClInclude>
+    <ClInclude Include="DouyuRobot.h">
+      <Filter>Douyu</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="LiveRobot.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="DouyuRobot.cpp">
+      <Filter>Douyu</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageEncode.cpp">
+      <Filter>Douyu</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

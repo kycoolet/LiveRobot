@@ -5,27 +5,21 @@
 #include <vector>
 
 #include "Robot.h"
+
+#include "../Common/Src/GeneralHelper.h"
+#include "../Common/Src/bufferptr.h"
 #include "../HPSocket/Src/TcpAgent.h"
 #include "../HPSocket/Src/SocketInterface.h"
-#include "../Common/Src/bufferptr.h"
 
-struct SERVER
-{
-	CString host;
-	USHORT port;
-};
-
-enum CONN_STATUS
-{
-    CS_ERROR = 0,
-    CS_CONNECTED = 1,
-    CS_LOGGED = 2,
-    CS_CLOSE = 3
-};
 
 class DouyuRobot : public Robot, private CTcpAgentListener
 {
 public:
+    enum ERROR_CODE
+    {
+        ERR_GET_ROOM_ARGS_FAIL = 10000
+    };
+
     DouyuRobot();
 	~DouyuRobot();
 
@@ -35,6 +29,20 @@ public:
     virtual UINT GetLoggedTotal();
 
 private:
+    struct SERVER
+    {
+        CString host;
+        USHORT port;
+    };
+
+    enum CONN_STATUS
+    {
+        CS_ERROR = 0,
+        CS_CONNECTED = 1,
+        CS_LOGGED = 2,
+        CS_CLOSE = 3
+    };
+
 	virtual EnHandleResult OnConnect(CONNID dwConnID);
 	virtual EnHandleResult OnReceive(CONNID dwConnID, const BYTE* pData, int iLength);
 	virtual EnHandleResult OnClose(CONNID dwConnID);
